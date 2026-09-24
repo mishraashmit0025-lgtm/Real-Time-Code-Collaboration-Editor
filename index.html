@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CollabCode</title>
+  </head>
+  <body>
+    <header class="bar">
+      <strong class="logo">CollabCode</strong>
+      <span class="room">room <code id="room-name"></code></span>
+      <button id="share" type="button">Copy link</button>
+      <label>Language <select id="language"></select></label>
+      <label>Name <input id="user-name" maxlength="24" /></label>
+      <span id="status" class="status">connecting…</span>
+      <ul id="users" class="users" aria-label="people in this room"></ul>
+    </header>
+    <main id="editor"></main>
+    <script type="module" src="/client/src/main.ts"></script>
+  </body>
+</html>

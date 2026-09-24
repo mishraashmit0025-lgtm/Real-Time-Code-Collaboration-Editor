@@ -1,0 +1,31 @@
+{
+  "name": "realtime-code-collab-editor",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:server": "tsx watch server/src/index.ts",
+    "dev:client": "vite",
+    "build": "tsc -p tsconfig.json --noEmit && vite build && tsc -p server/tsconfig.json",
+    "start": "node server/dist/index.js",
+    "test": "vitest run",
+    "load-test": "tsx scripts/load-test.ts"
+  },
+  "dependencies": {
+    "lib0": "^0.2.117",
+    "monaco-editor": "^0.56.0",
+    "ws": "^8.21.3",
+    "y-monaco": "^0.1.6",
+    "y-protocols": "^1.0.7",
+    "y-websocket": "^3.1.0",
+    "yjs": "^13.6.33"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "@types/ws": "^8.18.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.1",
+    "vitest": "^5.0.1"
+  }
+}
